@@ -1,0 +1,108 @@
+:root {
+    --bg-color: white;
+    --bg-secondary: rgba(0, 0, 0, 0.3);
+    --nav-footer-color: rgba(0, 0, 0, 0.5);
+    --text-color: black;
+    --card-color: black;
+    --card-text: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--nav-footer-color);
+    margin: 0;
+    height: 40px;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+.section {
+    width: calc(100% - 2em);
+    margin: 0;
+    padding: 1em;
+}
+
+.section:nth-child(odd) {
+    background-color: var(--bg-secondary);
+}
+
+.title {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--card-color);
+    min-height: 550px;
+    width: 400px;
+    color: var(--card-text);
+    padding: 0;
+    margin: 3em;
+    box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.5);
+    overflow-y: visible;
+    flex-shrink: 0;
+}
+
+.card img {
+    object-fit: cover;
+    height: 440px;
+    width: 100%;
+}
+
+.card h4, .card p, .card a {
+    margin: 0.5em 1em;
+}
+
+.card hr {
+    border-color: var(--card-text);
+    margin: 0.5em;
+}
+
+.card a {
+    color: var(--card-text);
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        box-shadow: none;
+        width: 100vw;
+        margin: 0
+    }
+
+    .section {
+        padding-bottom: 0;
+    }
+}
