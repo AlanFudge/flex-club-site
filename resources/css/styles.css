@@ -1,9 +1,9 @@
 :root {
-    --bg-color: white;
+    --bg-color: rgb(50, 45, 70);
     --bg-secondary: rgba(0, 0, 0, 0.3);
     --nav-footer-color: rgba(0, 0, 0, 0.5);
-    --text-color: black;
-    --card-color: black;
+    --text-color: white;
+    --card-color: rgb(100, 100, 80);
     --card-text: white;
 }
 
